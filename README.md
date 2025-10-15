@@ -15,11 +15,12 @@ Proyek ini merupakan simulasi reaktor kimia berbasis OOP Python, yang terdiri da
 ## Cara Menjalankan
 
 1. Pastikan Python 3 sudah terpasang.
-2. Jalankan perintah berikut di terminal:
+2. Masukkan parameter simulasi yang dibutuhkan di `main.py`.
+3. Jalankan perintah berikut di terminal:
    ```sh
    python main.py
    ```
-3. Hasil simulasi akan dicatat di file `simulation_log.json`.
+4. Hasil simulasi akan dicatat di file `simulation_log.json`.
 
 ## Konfigurasi Simulasi
 

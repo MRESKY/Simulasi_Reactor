@@ -1,7 +1,10 @@
+'''Modul utama untuk menjalankan simulasi reaktor kimia'''
+
 from reactor import Reactor
 from kinetic_model import kineticModel
 from controller import controlSystem
 
+# Parameter awal untuk simulasi reaktor kimia
 volume = 1000  # dalam liters
 temperature = 300  # dalam Kelvin
 pressure = 101325  # dalam Pascals
@@ -11,6 +14,7 @@ reaction_order = 1  # first-order reaksi
 simulation_steps = 10  # banyaknya iterasi simulasi
 
 
+# Inisialisasi objek reaktor, model kinetik, dan sistem kontrol
 reactor = Reactor(volume, temperature, pressure, reactant_concentration)
 kinetic_model = kineticModel(reactor, reaction_rate_constant, reaction_order)
 controller = controlSystem(reactor, kinetic_model)

@@ -1,15 +1,20 @@
+'''Modul untuk mendefinisikan kelas reaktor kimia'''
 
 class Reactor():
-    def __init__(self, volume, temperatur, tekanan, konsentrasi_reaktan):
+    '''Kelas untuk reaktor kimia'''
+    def __init__(self, volume, temperatur, tekanan, konsentrasi_reaktan) -> None:
+        '''Inisialisasi dengan volume, temperatur, tekanan, dan konsentrasi reaktan'''
         self.volume = volume
         self.temperatur = temperatur
         self.tekanan = tekanan
         self.konsentrasi_reaktan = konsentrasi_reaktan
-    
-    def get_status(self):
+
+    def get_status(self) -> None:
+        '''Tampilkan status reaktor saat ini'''
         print(f'volume reaktor saat ini {self.volume}, \n suhu reaktor saat ini {self.temperatur}, \n tekanan reaktor saat ini {self.tekanan}, \n konsentrasi reaktan saat ini {self.konsentrasi_reaktan}')
 
-    def update_status(self, volume_baru, temperatur_baru, tekanan_baru, konsentrasi_baru):
+    def update_status(self, volume_baru, temperatur_baru, tekanan_baru, konsentrasi_baru) -> None:
+        '''Perbarui status reaktor dengan nilai baru'''
         self.volume = volume_baru
         self.temperatur = temperatur_baru
         self.tekanan = tekanan_baru

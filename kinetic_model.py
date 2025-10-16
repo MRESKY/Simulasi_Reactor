@@ -2,7 +2,7 @@
 
 class kineticModel():
     '''Kelas untuk model kinetika reaksi kimia'''
-    def __init__(self, reaktor, konstanta_reaksi, orde_reaksi) -> None:
+    def __init__(self, reaktor, konstanta_reaksi: float, orde_reaksi: int) -> None:
         '''Inisialisasi dengan objek reaktor, konstanta reaksi, dan orde reaksi'''
         self.reactor = reaktor
         self.konstanta_reaksi = konstanta_reaksi
